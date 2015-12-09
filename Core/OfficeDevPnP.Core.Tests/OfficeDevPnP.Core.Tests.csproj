@@ -197,6 +197,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IdentityModel.Selectors" />
@@ -268,9 +269,11 @@
     <Compile Include="Framework\Providers\BaseTemplateTests.cs" />
     <Compile Include="Framework\Providers\XMLProvidersTests.cs" />
     <Compile Include="Framework\ProvisioningTemplates\DomainModelTests.cs" />
+    <Compile Include="Utilities\Request.cs" />
     <Compile Include="Utilities\JsonUtilityTests.cs" />
     <Compile Include="Utilities\EncryptionUtilityTests.cs" />
     <Compile Include="Diagnostics\PnPMonitoredScopeTests.cs" />
+    <Compile Include="Utilities\ClientContextWrapperTests.cs" />
     <Compile Include="Utilities\UrlUtilityTests.cs" />
     <Compile Include="AppModelExtensions\WebExtensionsTests.cs" />
     <Compile Include="AppModelExtensions\PageExtensionsTests.cs" />
@@ -289,6 +292,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Utilities\PayLoadExamples\PayloadExample.xml" />
+    <Content Include="Utilities\PayLoadExamples\PayloadExample2.xml" />
     <None Include="App.config" />
     <None Include="App.config.sample" />
     <None Include="packages.config" />
